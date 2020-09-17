@@ -154,10 +154,10 @@ fresh@0.5.2:
   resolved "https://registry.yarnpkg.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
-heroku-ssl-redirect@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/heroku-ssl-redirect/-/heroku-ssl-redirect-0.1.0.tgz#38c0b973c9caf29fbda623a0a1e465511ac8e9b2"
-  integrity sha512-hv3R4uRpctRYfzFDmkZ8UHSydx9xPi8L92pKikavUGL/DsQWxC4CWgI+ZqaNEZp5G2rH7GWkbwNJdh3l93/JnA==
+heroku-ssl-redirect@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/heroku-ssl-redirect/-/heroku-ssl-redirect-0.0.4.tgz#21ba0707aa503b50a412a0946abfaa88ef7d082c"
+  integrity sha1-IboHB6pQO1CkEqCUar+qiO99CCw=
 
 http-errors@1.7.2:
   version "1.7.2"

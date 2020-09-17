@@ -1,11 +1,11 @@
-const sslRedirect = require('heroku-ssl-redirect');
-const express = require('express');
-const path = require('path');
+var sslRedirect = require('heroku-ssl-redirect');
+var express = require('express');
+var path = require('path');
 
-const app = express();
-app.use(express.static(path.join(__dirname, '/frontend/build')));
+var app = express();
 
 app.use(sslRedirect());
+app.use(express.static(path.join(__dirname, '/frontend/build')));
 
 app.get('/ping', function (req, res) {
  return res.send('pong');

@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "heroku-ssl-redirect": "0.1.0"
+    "heroku-ssl-redirect": "0.0.4"
   },
   "scripts": {
     "start": "node index.js",
