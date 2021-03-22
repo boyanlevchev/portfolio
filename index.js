@@ -1,3 +1,5 @@
+//BACKEND ADDED FOR SSL REDIRECT
+
 var sslRedirect = require('heroku-ssl-redirect');
 var express = require('express');
 var path = require('path');
