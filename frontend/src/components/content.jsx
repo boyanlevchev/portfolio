@@ -140,7 +140,7 @@ function Content(props) {
                     opacity: { duration: 1 }
                   }}
                   className="nodes-image nodes-1">
-                    <video src="/node-burst-2.mov" autoplay="true" loop="true" style={{width: '100%', height: '100%'}}/>
+                    <video src="/node-burst-2.mov" autoplay="true" loop="true" webkit-playsinline="true" playsinline="true" style={{width: '100%', height: '100%'}}/>
                   </motion.div>
             }
 
@@ -158,7 +158,7 @@ function Content(props) {
                     opacity: { duration: 1 }
                   }}
                   className="nodes-image nodes-2">
-                    <video src="/node-burst.mov" autoplay="true" loop="true" style={{width: '100%', height: '100%'}}/>
+                    <video src="/node-burst.mov" autoplay="true" loop="true" webkit-playsinline="true" playsinline="true" style={{width: '100%', height: '100%'}}/>
                   </motion.div>
             }
 
