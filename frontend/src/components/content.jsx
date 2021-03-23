@@ -10,10 +10,12 @@ function Content(props) {
       <div id="content-box">
 
         <div id="title-box">
-          <h1>BOYAN LEVCHEV</h1>
-          <h2>FULL STACK WEB DEVELOPER</h2>
-          <h2>LINKEDIN:<a href="https://linkedin.com/in/boyanlevchev">linkedin.com/in/boyanlevchev</a></h2>
-          <h2>GITHUB:<a href="https://github.com/boyanlevchev">github.com/boyanlevchev</a></h2>
+          <div className={"title-text-container"}>
+            <h1>BOYAN LEVCHEV</h1>
+            <h2>FULL STACK WEB DEVELOPER</h2>
+            <h2>LINKEDIN:<a href="https://linkedin.com/in/boyanlevchev">linkedin.com/in/boyanlevchev</a></h2>
+            <h2>GITHUB:<a href="https://github.com/boyanlevchev">github.com/boyanlevchev</a></h2>
+          </div>
         </div>
 
         <div id="links-box">
@@ -63,7 +65,7 @@ function Content(props) {
               <h2 className="h2-right">A guided questionnaire to help you pick the right plan</h2>
             </li>
 
-            <li id="froala-3-li">
+            <motion.li id="froala-3-li" onHoverStart={() => setHovered(5)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(5)}>
               <a href="https://froala.com/wysiwyg-editor/customizer-v3/" target="_blank" rel="noopener noreferrer">
                <h2 className="h2-left">> Froala Editor Customizer</h2>
                <div className={"word-underline"}></div>
@@ -72,9 +74,9 @@ function Content(props) {
                </div>
               </a>
               <h2 className="h2-right">A visual tool for granular customization of the Froala WYSIWYG Editor</h2>
-            </li>
+            </motion.li>
 
-            <li id="violeta-li" onMouseEnter={() => setHovered(6)} onMouseLeave={() => setHovered(null)} onTouchStart={() => setHovered(6)}>
+            <motion.li id="violeta-li" onHoverStart={() => setHovered(6)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(6)}>
               <a href="http://violeta-popov-demo.herokuapp.com" target="_blank" rel="noopener noreferrer">
                 <h2 className="h2-left">> Violeta Popov M.D.</h2>
                 <div className={"word-underline"}></div>
@@ -83,7 +85,7 @@ function Content(props) {
                 </div>
               </a>
               <h2 className="h2-right">A portfolio website for an NY-based medical practitioner - <br/> work in progress...</h2>
-            </li>
+            </motion.li>
 
             <li id="wedding-li">
               <a href="https://jujubobo.wedding" target="_blank" rel="noopener noreferrer">
@@ -108,7 +110,7 @@ function Content(props) {
                 animate={{opacity:1, scale:1, x:0}}
                 exit={{opacity:0, scale: 0.9, x:100}}
                 transition={{default: {type: 'spring'}, x:{type: 'spring', stiffness: 50, duration: 2.5 }, scale: {type: 'spring', bounce: 0.4, duration: 2.5 }}}
-                className="muse-1 muse-images">
+                className="muse-1 images">
                 </motion.div>
             }
             {hovered === 1 &&
@@ -123,7 +125,7 @@ function Content(props) {
                   scale: {type: 'spring', bounce: 0.4, duration: 2.7 },
                   opacity: { duration: 0.6 }
                 }}
-                className="muse-2 muse-images"></motion.div>
+                className="muse-2 images"></motion.div>
             }
 
             {hovered === 2 &&
@@ -139,8 +141,8 @@ function Content(props) {
                     scale: {type: 'spring', bounce: 0.4, duration: 2.7 },
                     opacity: { duration: 1 }
                   }}
-                  className="nodes-image nodes-1">
-                    <video src="/node-burst-2.mov" autoplay="true" loop="true" webkit-playsinline="true" playsinline="true" style={{width: '100%', height: '100%'}}/>
+                  className="images nodes-1">
+                    <video src="/node-burst-2.mov" autoPlay={true} loop={true} webkit-playsinline="true" playsInline={true} style={{width: '100%', height: '100%'}}/>
                   </motion.div>
             }
 
@@ -157,8 +159,8 @@ function Content(props) {
                     scale: {type: 'spring', bounce: 0.4, duration: 2.7 },
                     opacity: { duration: 1 }
                   }}
-                  className="nodes-image nodes-2">
-                    <video src="/node-burst.mov" autoplay="true" loop="true" webkit-playsinline="true" playsinline="true" style={{width: '100%', height: '100%'}}/>
+                  className="images nodes-2">
+                    <video src="/node-burst.mov" autoPlay={true} loop={true} webkit-playsinline="true" playsInline={true} style={{width: '100%', height: '100%'}}/>
                   </motion.div>
             }
 
@@ -175,7 +177,7 @@ function Content(props) {
                     scale: {type: 'spring', bounce: 0.4, duration: 2.7 },
                     opacity: { duration: 1 }
                   }}
-                  className="froala-image froala-1"></motion.div>
+                  className="images froala-1"></motion.div>
             }
 
             {hovered === 3 &&
@@ -185,34 +187,63 @@ function Content(props) {
                   animate={{opacity:1, scale:1, x:0, y:0}}
                   exit={{opacity:0, scale: 0.95, x:-100, y: -100}}
                   transition={{default: {type: 'spring'}, x:{type: 'spring', stiffness: 50, duration: 4 }, y:{type: 'spring', stiffness: 50, duration: 4 }, scale: {type: 'spring', bounce: 0.4, duration: 4.5 }}}
-                  className="froala-image froala-2"></motion.div>
+                  className="images froala-2"></motion.div>
             }
 
-
-          <AnimatePresence>
-            {hovered === 6 &&
-              <Fragment>
+            {hovered === 5 &&
                 <motion.div
+                  key={"froala-3"}
                   initial={{opacity:0, scale: 0.95, x:-100}}
                   animate={{opacity:1, scale:1, x:0}}
                   exit={{opacity:0, scale: 0.95, x:-100}}
                   transition={{ type: "spring", duration: 4, stiffness: 50}}
-                  className="violeta-image violeta-1"></motion.div>
+                  className={"images froala-customizer-1"}></motion.div>
+            }
+            {hovered === 5 &&
                 <motion.div
+                  key={"froala-4"}
                   initial={{opacity:0, scale: 0.95, y:-100, x:100}}
                   animate={{opacity:1, scale:1, y:0, x:0}}
                   exit={{opacity:0, scale: 0.95, y:-100, x:100}}
                   transition={{ type: "spring", duration: 4, stiffness: 50}}
-                  className="violeta-image violeta-2"></motion.div>
+                  className={"images froala-customizer-2"}></motion.div>
+            }
+            {hovered === 5 &&
                 <motion.div
+                  key={"froala-5"}
                   initial={{opacity:0, scale: 0.95, x:100}}
                   animate={{opacity:1, scale:1, x:0}}
                   exit={{opacity:0, scale: 0.95, x:100}}
                   transition={{ type: "spring", duration: 4, stiffness: 50}}
-                  className="violeta-image violeta-3"></motion.div>
+                  className={"images froala-customizer-3"}></motion.div>
+            }
+
+
+            {hovered === 6 &&
+              <Fragment>
+                <motion.div
+                  key={"violeta-1"}
+                  initial={{opacity:0, scale: 0.95, x:-100}}
+                  animate={{opacity:1, scale:1, x:0}}
+                  exit={{opacity:0, scale: 0.95, x:-100}}
+                  transition={{ type: "spring", duration: 4, stiffness: 50}}
+                  className={"images violeta-1"}></motion.div>
+                <motion.div
+                  key={"violeta-2"}
+                  initial={{opacity:0, scale: 0.95, y:-100, x:100}}
+                  animate={{opacity:1, scale:1, y:0, x:0}}
+                  exit={{opacity:0, scale: 0.95, y:-100, x:100}}
+                  transition={{ type: "spring", duration: 4, stiffness: 50}}
+                  className={"images violeta-2"}></motion.div>
+                <motion.div
+                  key={"violeta-3"}
+                  initial={{opacity:0, scale: 0.95, x:100}}
+                  animate={{opacity:1, scale:1, x:0}}
+                  exit={{opacity:0, scale: 0.95, x:100}}
+                  transition={{ type: "spring", duration: 4, stiffness: 50}}
+                  className={"images violeta-3"}></motion.div>
               </Fragment>
             }
-          </AnimatePresence>
           </AnimatePresence>
         </div>
       </div>
