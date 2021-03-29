@@ -43,7 +43,7 @@ function Content(props) {
               <h2 className="h2-right">An exploration interface for the Royal College of Art exhibit Everything Forever</h2>
             </motion.li>
 
-            <motion.li id="froala-li"  onHoverStart={() => setHovered(3)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(3)}>
+            <motion.li id="froala-li" onHoverStart={() => setHovered(3)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(3)}>
               <a href="https://froala.com/wysiwyg-editor/whiteboard" target="_blank" rel="noopener noreferrer">
                   <h2 className="h2-left">> Froala Whiteboard</h2>
                   <div className={"word-underline"}></div>
@@ -54,7 +54,7 @@ function Content(props) {
               <h2 className="h2-right">A collaborative brainstorming tool</h2>
             </motion.li>
 
-            <li id="froala-2-li">
+            <motion.li id="froala-2-li" onHoverStart={() => setHovered(4)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(4)}>
               <a href="https://froala.com/wysiwyg-editor/pricing" target="_blank" rel="noopener noreferrer">
                 <h2 className="h2-left">> Froala Pricing Wizard</h2>
                 <div className={"word-underline"}></div>
@@ -63,7 +63,7 @@ function Content(props) {
                 </div>
               </a>
               <h2 className="h2-right">A guided questionnaire to help you pick the right plan</h2>
-            </li>
+            </motion.li>
 
             <motion.li id="froala-3-li" onHoverStart={() => setHovered(5)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(5)}>
               <a href="https://froala.com/wysiwyg-editor/customizer-v3/" target="_blank" rel="noopener noreferrer">
@@ -87,7 +87,7 @@ function Content(props) {
               <h2 className="h2-right">A portfolio website for an NY-based medical practitioner - <br/> work in progress...</h2>
             </motion.li>
 
-            <li id="wedding-li">
+            <motion.li id="wedding-li" onHoverStart={() => setHovered(7)} onHoverEnd={() => setHovered(null)} onTouchStart={() => setHovered(7)}>
               <a href="https://jujubobo.wedding" target="_blank" rel="noopener noreferrer">
                 <h2 className="h2-left">> Wedding Save the Date</h2>
                 <div className={"word-underline"}></div>
@@ -96,7 +96,7 @@ function Content(props) {
                 </div>
               </a>
               <h2 className="h2-right">A save-the-date website created for a couple getting married</h2>
-            </li>
+            </motion.li>
 
           </ul>
         </div>
@@ -190,6 +190,28 @@ function Content(props) {
                   className="images froala-2"></motion.div>
             }
 
+            {hovered === 4 &&
+              <Fragment>
+
+                <motion.div
+                  key={"wizard-1"}
+                  initial={{opacity:0, scale: 0.95, x:100}}
+                  animate={{opacity:1, scale:1, x:0}}
+                  exit={{opacity:0, scale: 0.95, x:100}}
+                  transition={{ type: "spring", duration: 3, stiffness: 40}}
+                  className={"images wizard-1"}></motion.div>
+
+                <motion.div
+                  key={"wizard-2"}
+                  initial={{opacity:0, scale: 0.95, x:100, y: -50}}
+                  animate={{opacity:1, scale:1, x:0, y: 0}}
+                  exit={{opacity:0, scale: 0.95, x:100, y: -50}}
+                  transition={{ type: "spring", duration: 4.5, stiffness: 65}}
+                  className={"images wizard-2"}></motion.div>
+              </Fragment>
+            }
+
+
             {hovered === 5 &&
                 <motion.div
                   key={"froala-3"}
@@ -243,6 +265,33 @@ function Content(props) {
                   transition={{ type: "spring", duration: 4, stiffness: 50}}
                   className={"images violeta-3"}></motion.div>
               </Fragment>
+            }
+
+            {hovered === 7 &&
+                <motion.div
+                  key={"jujubobo-1"}
+                  initial={{opacity:0, scale: 0.95, x:-100, y: -50}}
+                  animate={{opacity:1, scale:1, x:0, y:0}}
+                  exit={{opacity:0, scale: 0.95, x:-100, y: -50}}
+                  transition={{ type: "spring", duration: 4, stiffness: 50}}
+                  className={"images jujubobo-1"}></motion.div>
+            }
+            {hovered === 7 &&
+                <motion.div
+                  key={"jujubobo-2"}
+                  initial={{opacity:0, scale: 0.8, x:-170, y: 100}}
+                  animate={{opacity:1, scale:1, x:0, y:0}}
+                  exit={{opacity:0, scale: 0.9, x:-50, y:100}}
+                  transition={{
+                    default: {type: 'spring'},
+                    x:{type: 'spring', stiffness: 50, duration: 2 },
+                    y:{duration: 0.7},
+                    scale: {type: 'spring', bounce: 0.4, duration: 2.7 },
+                    opacity: { duration: 1 }
+                  }}
+                  className={"images jujubobo-2"}>
+                    <video src="https://res.cloudinary.com/dt47helyp/video/upload/v1617033133/JujuBobo_rcru8f.mov" autoPlay={true} loop={true} webkit-playsinline="true" playsInline={true} style={{width: '100%', height: '100%'}}/>
+                </motion.div>
             }
           </AnimatePresence>
         </div>

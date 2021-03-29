@@ -20,7 +20,7 @@
 
 .muse-1 {
   z-index: -1;
-  background-image: url(/muse-1.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1617044987/Screen_Shot_2021-03-29_at_8.08.06_PM_vg1asv.png');
   @include for-tablet-landscape-up {
     top: 17%;
     left: 45%;
@@ -39,7 +39,7 @@
 .muse-2 {
   z-index: -2;
 
-  background-image: url(/muse-2.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1617044991/Screen_Shot_2021-03-29_at_8.09.12_PM_p1dz1m.png');
 
   @include for-tablet-landscape-up {
     top: 50%;
@@ -64,7 +64,7 @@
     width: 500px;
   }
   @include for-tablet-portrait-down {
-    bottom: 180px;
+    bottom: 10%;
     right: 50px;
     height: 240px;
     width: 350px;
@@ -80,7 +80,7 @@
     width: 670px;
   }
   @include for-tablet-portrait-down {
-    top: 40%;
+    top: 20%;
     left: 50px;
     height: 240px;
     width: 350px;
@@ -182,16 +182,16 @@
   z-index: -3;
 
   @include for-tablet-landscape-up {
-    top: 10%;
-    right: 40%;
-    height: 280px;
-    width: 500px;
+    top: 25%;
+    left: 15%;
+    height: 200px;
+    width: 350px;
   }
   @include for-tablet-portrait-down {
-    top: 150px;
-    right: 0;
-    height: 180px;
-    width: 380px;
+    top: 25%;
+    left: 15%;
+    height: 100px;
+    width: 320px;
   }
   background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196001/Froala_Customizer_nv3pqi.png");
 }
@@ -201,14 +201,14 @@
   z-index: -1;
 
   @include for-tablet-landscape-up {
-    top: 40%;
-    left: 10%;
+    bottom: 10%;
+    left: 2%;
     height: 280px;
     width: 500px;
   }
   @include for-tablet-portrait-down {
-    top: 150px;
-    right: 0;
+    bottom: 5%;
+    left: 0;
     height: 180px;
     width: 380px;
   }
@@ -221,10 +221,66 @@
   z-index: -2;
 
   @include for-tablet-landscape-up {
-    top: 60%;
+    top: 40%;
     right: 5%;
-    height: 280px;
+    height: 350px;
     width: 500px;
+  }
+  @include for-tablet-portrait-down {
+    top: 40%;
+    right: 5%;
+    height: 180px;
+    width: 380px;
+  }
+
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195993/Froala_customizer_3_a9gxm6.png");
+}
+
+
+.jujubobo-1 {
+  z-index: -2;
+
+  @include for-tablet-landscape-up {
+    top: 40%;
+    right: 5%;
+    height: 270px;
+    width: 500px;
+  }
+  @include for-tablet-portrait-down {
+    top: 30%;
+    right: 0;
+    height: 180px;
+    width: 380px;
+  }
+
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196013/jujubobo_2_svorka.png");
+}
+
+.jujubobo-2 {
+  z-index: -1;
+  @include for-tablet-landscape-up {
+    top: 25%;
+    left: 6%;
+    height: 320px;
+    width: 670px;
+  }
+  @include for-tablet-portrait-down {
+    top: 60%;
+    left: 50px;
+    height: 200px;
+    width: 310px;
+  }
+}
+
+
+.wizard-1 {
+  z-index: -1;
+
+  @include for-tablet-landscape-up {
+    top: 40%;
+    right: 2%;
+    height: 330px;
+    width: 650px;
   }
   @include for-tablet-portrait-down {
     top: 150px;
@@ -233,5 +289,24 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195993/Froala_customizer_3_a9gxm6.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196002/Froala_Wizard_mkk3r5.png");
+}
+
+.wizard-2 {
+  z-index: -2;
+
+  @include for-tablet-landscape-up {
+    top: 10%;
+    left: 40%;
+    height: 320px;
+    width: 350px;
+  }
+  @include for-tablet-portrait-down {
+    bottom: 70px;
+    right: 10%;
+    height: 180px;
+    width: 380px;
+  }
+
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195996/Froala_Wizard_2_e6eutz.png");
 }
