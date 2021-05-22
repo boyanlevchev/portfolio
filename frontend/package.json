@@ -6,11 +6,13 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "framer-motion": "3.10.6",
+    "framer-motion": "^4.1.13",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
+    "react-div-100vh": "^0.6.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-use": "^17.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

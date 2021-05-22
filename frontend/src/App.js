@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.scss';
 
-import Content from './components/content'
+import Content from './containers/content'
 
 function App() {
+
   return (
     <div className="App">
       <Content/>
+
     </div>
   );
 }

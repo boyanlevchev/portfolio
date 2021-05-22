@@ -20,7 +20,7 @@
 
 .muse-1 {
   z-index: -1;
-  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1617044987/Screen_Shot_2021-03-29_at_8.08.06_PM_vg1asv.png');
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621268407/Portfolio/Desktop/muesi-1_-s_bklo5f.png');
   @include for-tablet-landscape-up {
     top: 17%;
     left: 45%;
@@ -39,7 +39,7 @@
 .muse-2 {
   z-index: -2;
 
-  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1617044991/Screen_Shot_2021-03-29_at_8.09.12_PM_p1dz1m.png');
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621268412/Portfolio/Desktop/musei-2-s_wwq5ub.jpg');
 
   @include for-tablet-landscape-up {
     top: 50%;
@@ -101,7 +101,7 @@
     height: 240px;
     width: 350px;
   }
-  background-image: url(/froala.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621269710/Portfolio/Desktop/froala-1_pdb6m5.jpg');
 }
 
 .froala-2 {
@@ -118,7 +118,7 @@
     height: 200px;
     width: 350px;
   }
-  background-image: url(/froala-2.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621269710/Portfolio/Desktop/froala-2_bexfau.jpg');
 }
 
 .violeta-1 {
@@ -136,7 +136,7 @@
     width: 400px;
   }
 
-  background-image: url(/violeta.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621270319/Portfolio/Desktop/violeta-s_z4tvqq.jpg');
 }
 
 .violeta-2 {
@@ -154,7 +154,7 @@
     width: 300px;
   }
 
-  background-image: url(/violeta-2.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621270318/Portfolio/Desktop/violeta-2-s_jxxxh9.jpg');
 }
 
 .violeta-3 {
@@ -172,7 +172,7 @@
     width: 380px;
   }
 
-  background-image: url(/violeta-3.jpg);
+  background-image: url('https://res.cloudinary.com/dt47helyp/image/upload/v1621270319/Portfolio/Desktop/violeta-3-s_dmcuoh.jpg');
 
 }
 
@@ -193,7 +193,7 @@
     height: 100px;
     width: 320px;
   }
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196001/Froala_Customizer_nv3pqi.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621644057/Portfolio/Desktop/Froala_Customizer_1_mtaldq.png");
 }
 
 
@@ -213,7 +213,7 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195993/Froala_Customizer_2_i5dtel.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621644057/Portfolio/Desktop/Froala_Customizer_2_hmifxb.png");
 }
 
 
@@ -233,7 +233,7 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195993/Froala_customizer_3_a9gxm6.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621644057/Portfolio/Desktop/Froala_customizer_3_vspu73.png");
 }
 
 
@@ -253,7 +253,7 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196013/jujubobo_2_svorka.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621646585/Portfolio/Desktop/jujubobo_2-s_ewkzda.png");
 }
 
 .jujubobo-2 {
@@ -289,7 +289,7 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616196002/Froala_Wizard_mkk3r5.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621646068/Portfolio/Desktop/Froala_Wizard_1_w4r07h.png");
 }
 
 .wizard-2 {
@@ -308,5 +308,23 @@
     width: 380px;
   }
 
-  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1616195996/Froala_Wizard_2_e6eutz.png");
+  background-image: url("https://res.cloudinary.com/dt47helyp/image/upload/v1621646068/Portfolio/Desktop/Froala_Wizard_2_qrtomj.png");
+}
+
+.wizard-3 {
+
+  z-index: -2;
+
+  @include for-tablet-landscape-up {
+    top: 50%;
+    left: 7%;
+    height: 300px;
+    width: 400px;
+  }
+  @include for-tablet-portrait-down {
+    top: 70px;
+    left: 10%;
+    height: 180px;
+    width: 380px;
+  }
 }

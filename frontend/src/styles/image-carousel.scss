@@ -1,0 +1,37 @@
+.image-carousel {
+  pointer-events: auto;
+  position: absolute;
+  z-index: 1;
+  @include for-tablet-landscape-down {
+    z-index: 3;
+  }
+  bottom: 0;
+  left: 0;
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  // overflow-y: visible;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  & img {
+    height: 100%;
+    margin: 0 2rem;
+  }
+
+  & video {
+    height: 100%;
+    margin: 0 2rem;
+  }
+}
+
+.carousel-spacer {
+  min-width: 500px;
+  height: 40vh;
+  margin: 0 2rem;
+  @include for-tablet-landscape-down {
+    min-width: 0px;
+    width: 0px;
+  }
+}
