@@ -1,30 +1,4 @@
 export const projectDetails = {
-  "muse": {
-    title: "Musei",
-    subtitle: "A DIY virtual reality gallery builder for artists, galleries and curators",
-    href: 'https://www.musei.io',
-    started: '03-2020',
-    ended: 'ongoing',
-    role: 'Full stack',
-    technologies_used: {
-      frontend: ['HTML5', 'CSS3', 'SASS/SCSS', 'Javascript ES6', 'A-Frame', 'three.js', 'jQuery', 'Bootstrap',],
-      backend: ['Ruby', 'Rails', 'PostGreSQL', 'AWS S3', 'AWS Cloudfront', 'Heroku', 'ex-Cloudinary']
-    },
-    description: "",
-    images: [
-      {
-        type: 'image',
-        url: 'https://res.cloudinary.com/dt47helyp/image/upload/v1621268407/Portfolio/Desktop/muesi-1_-s_bklo5f.png',
-        alt: 'Musei.io home page - make a new VR gallery, see artists, see spaces'
-      },
-      {
-        type: 'image',
-        url: 'https://res.cloudinary.com/dt47helyp/image/upload/v1621268412/Portfolio/Desktop/musei-2-s_wwq5ub.jpg',
-        alt: 'Musei.io VR scene - Michelangelo in Bagan, Khayiminga temple'
-      }
-    ]
-  },
-
   "everything": {
     href: "https://everythingforever.net/nodes",
     title: "Everything Forever Nodes",
@@ -192,6 +166,32 @@ export const projectDetails = {
         type: 'video',
         url: 'https://res.cloudinary.com/dt47helyp/video/upload/v1621646586/Portfolio/Desktop/JujuBobo_dls3nf.mp4',
         alt: 'jujubobo.wedding website for Julie and Boyan - humorous interactive save the date form, where user must press "ctr"-"s"'
+      }
+    ]
+  },
+
+  "muse": {
+    title: "Musei",
+    subtitle: "A DIY virtual reality gallery builder for artists, galleries and curators",
+    href: 'https://www.musei.io',
+    started: '03-2020',
+    ended: 'ongoing',
+    role: 'Full stack',
+    technologies_used: {
+      frontend: ['HTML5', 'CSS3', 'SASS/SCSS', 'Javascript ES6', 'A-Frame', 'three.js', 'jQuery', 'Bootstrap',],
+      backend: ['Ruby', 'Rails', 'PostGreSQL', 'AWS S3', 'AWS Cloudfront', 'Heroku', 'ex-Cloudinary']
+    },
+    description: "",
+    images: [
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dt47helyp/image/upload/v1621268407/Portfolio/Desktop/muesi-1_-s_bklo5f.png',
+        alt: 'Musei.io home page - make a new VR gallery, see artists, see spaces'
+      },
+      {
+        type: 'image',
+        url: 'https://res.cloudinary.com/dt47helyp/image/upload/v1621268412/Portfolio/Desktop/musei-2-s_wwq5ub.jpg',
+        alt: 'Musei.io VR scene - Michelangelo in Bagan, Khayiminga temple'
       }
     ]
   },

@@ -63,6 +63,16 @@ function ExpandedItem({layoutId, setExpanded, expanded, id, index, href, title, 
               </div>
             </a>
           </div>
+          <div className={"project-dates"}>
+            <h3 className={"project-dates-title"}>Dates worked:</h3>
+            <div>
+              <p>{projectDetails[id].started}</p>
+              <p>-</p>
+              <p>{projectDetails[id].ended}</p>
+
+            </div>
+
+          </div>
           <div className={"tech-used"}>
             <h3>Technologies used</h3>
 

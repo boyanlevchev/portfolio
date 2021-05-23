@@ -166,3 +166,29 @@
   overflow-y: hidden;
   height: 0px;
 }
+
+.project-dates {
+  font-style: italic;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+
+  h3, p {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    color: #e20d4d;
+  }
+
+  h3 {
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 0.4rem;
+  }
+}
